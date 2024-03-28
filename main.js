@@ -36,7 +36,7 @@ function isMobileDevice() {
 
 if(isMobileDevice()){
 const mySlidersMejoresDestinos = [
-  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634667/MA_zdayhh.png",label:"Cusco"},
+  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634667/MA_zdayhh.png",label:"Machu Picchu"},
   {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634680/V.CUSCO_ztzzwh.png",label:"Cusco"},
 ]
 
@@ -45,13 +45,18 @@ const divSwiperMejoresDestinos = document.getElementById('MejoresDestinos')
 mySlidersMejoresDestinos.forEach(ele=>{
   const tempDiv = document.createElement('div')
   
-  tempDiv.className = "swiper-slide"
+  tempDiv.className = "swiper-slide relative ml-2"
 
   const tempImg = document.createElement("img")
   tempImg.src= ele.imgUrl
-  tempImg.className = "w-full h-full"
+  tempImg.className = " w-[90%] h-full rounded-[25px] object-cover object-center"
+
+  const label = document.createElement('p')
+    label.className = "absolute bottom-5 left-2 text-white text-3xl font-bold"
+    label.innerText = ele.label
 
   tempDiv.appendChild(tempImg)
+  tempDiv.appendChild(label)
 
   const tempLabel = document.createElement('p')
   tempLabel.innerText = ele.label
@@ -77,6 +82,52 @@ const swiperMejoresDestinos = new Swiper('.swiper', {
   },
 });
 
+  const tripa = document.getElementById('itinerario')
+  tripa.remove()
+
+
+
+const itinerario = [
+    {title:"Llegada a Lima",imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711645766/LLEGADA-LIMA_yyqeed.png",desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú."},
+    {title:"Icas Paracas Full Day",imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711646387/HUACACHINS_cya0q5.png",desc:"Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding."}
+  ]
+
+
+  const valueWithZero = ['01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16']
+
+const divItinerario = document.getElementById('mobileItinerario')
+  
+itinerario.forEach((ele,index)=>{
+      const tempDiv = document.createElement('div') 
+      tempDiv.className= "flex flex-col items-center gap-y-5"
+      const tempImg = document.createElement('img')
+      tempImg.src =  ele.imgUrl
+      tempImg.width = 350
+      tempImg.height = 450
+      tempImg.className = "rounded-lg "
+      const tempHeaders = document.createElement('div')
+      tempHeaders.className= "w-4/5 px-10 flex flex-row "
+      const title = document.createElement('p')
+      title.className = "font-bold text-[#54595F] text-[20px] w-56"
+      const ball = document.createElement('div')
+      ball.className = "shrink-0 grow-0 rounded-full border px-2 border-gray-800"
+      ball.innerText= `DIA
+      ${valueWithZero[index]}`
+
+      title.innerText = ele.title
+      tempHeaders.appendChild(ball)
+      tempHeaders.appendChild(title)
+
+      const desc = document.createElement('p')
+      desc.className = "font-semibold text-[#7C7B80] mx-10"
+      desc.innerText = ele.desc
+
+      tempDiv.appendChild(tempHeaders)
+      tempDiv.appendChild(tempImg)
+      tempDiv.appendChild(desc)
+
+      divItinerario.appendChild(tempDiv)
+      })
 
 }else{
   
@@ -99,6 +150,57 @@ GalleryMejoresDestinos.forEach(ele=>{
   temp.appendChild(miniTemp)
   MejoresDestinos.appendChild(temp)
 })
+
+const itinerario = [
+    {title:"Llegada a Lima",imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711645766/LLEGA_LIM_Mesa_de_trabajo_1_bttsbn.png",desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú."},
+    {title:"Icas Paracas Full Day",imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711646398/HUANCAC_Mesa_de_trabajo_1_r9m0dp.png",desc:"Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding."}
+  ]
+    
+  const divItinerario = document.getElementById('itinerario')
+  const ballNumbers = document.getElementById('ballNumbers')
+  itinerario.forEach((ele,index)=>{
+      const tempDiv = document.createElement('div') 
+      tempDiv.className= "flex flex-row w-full mb-5"
+      
+      const tempImg = document.createElement('img')
+      tempImg.src =  ele.imgUrl
+      tempImg.width = 350
+      tempImg.height = 450
+      const tempWords = document.createElement('div')
+      tempWords.className= "w-1/2 px-10"
+      const title = document.createElement('p')
+      title.className = "font-bold text-[#54595F] text-3xl"
+      const desc = document.createElement('p')
+      desc.className= " text-xl text-[#6B7280]"
+      title.innerText = ele.title
+      desc.innerText = ele.desc
+      tempWords.appendChild(title)
+      tempWords.appendChild(desc)
+    if(index % 2 == 0){
+      const wrapper = document.createElement('div')
+      wrapper.className= "w-1/2 flex justify-center"
+      wrapper.appendChild(tempImg)
+      tempDiv.appendChild(wrapper)
+      tempDiv.appendChild(tempWords)
+    }else{
+      const wrapper = document.createElement('div')
+      wrapper.className= "w-1/2 flex justify-center"
+      wrapper.appendChild(tempImg)
+      tempDiv.appendChild(tempWords)
+      tempDiv.appendChild(wrapper)
+    }
+
+    const ball = document.createElement('div')
+    if(index == 0){
+
+    ball.className= "w-11 h-11 shrink-0 grow-0 rounded-full bg-[#B65F00] flex items-center justify-center text-white z-10 mt-[100px]"
+    }else{
+    ball.className= "w-11 h-11 shrink-0 grow-0 rounded-full bg-[#B65F00] flex items-center justify-center text-white z-10"
+    }
+    ball.innerText = `${index + 1}`
+    divItinerario.appendChild(tempDiv)
+    ballNumbers.appendChild(ball)
+  })
 
 }
 

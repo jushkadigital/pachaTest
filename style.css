@@ -125,10 +125,25 @@ button:focus-visible {
       height: 64px;
     }
     .swiper {
-  width: 400px;
-  height: 700px;
+  width: 100%;
+  height: 600px;
 }
 
+.tripa {
+  position:absolute;
+  left:calc(50% - 10px);
+  height:100vh;
+
+}
+.miniTripa {
+  position:absolute;
+  top:0;
+  left:calc(50% - 3px);
+  height:100vh;
+  border-left-color: #6B7280;
+  border-left-style:solid;
+  border-left-width: 5.6px;
+}
     @media (min-width: 992px) {
       .banner-principal {
         background-image: url('https://res.cloudinary.com/denkdx0za/image/upload/v1711562707/FONDO_pl6txd.png');
@@ -146,3 +161,5 @@ button:focus-visible {
         width: 75%;
       }
     }
+
+
