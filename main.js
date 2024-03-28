@@ -10,13 +10,14 @@ gallery1.forEach(url=>{
   const temp = document.createElement('div') 
   const miniTemp = document.createElement('img')
   miniTemp.src = url
-  miniTemp.className= "h-40 w-full max-w-full rounded-lg object-cover object-center"
+  miniTemp.className= "h-72 w-full max-w-full rounded-lg object-cover object-center"
   // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
     
   temp.appendChild(miniTemp)
   containerGallery1.appendChild(temp)
 
 })
+
 
 // core version + navigation, pagination modules:
 import Swiper from 'swiper';
@@ -28,13 +29,16 @@ import 'swiper/css/pagination';
 
 
 
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
 
 
+if(isMobileDevice()){
 const mySlidersMejoresDestinos = [
   {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634667/MA_zdayhh.png",label:"Cusco"},
   {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634680/V.CUSCO_ztzzwh.png",label:"Cusco"},
 ]
-
 
 const divSwiperMejoresDestinos = document.getElementById('MejoresDestinos')
 
@@ -72,6 +76,32 @@ const swiperMejoresDestinos = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+}else{
+  
+const swiper1 = document.getElementById('swiper1')
+  swiper1.remove()
+ const GalleryMejoresDestinos = [
+  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634667/MA_zdayhh.png",label:"Cusco"},
+  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634680/V.CUSCO_ztzzwh.png",label:"Cusco"},
+] 
+
+const MejoresDestinos = document.getElementById('galleryMejoresDestinos')
+
+GalleryMejoresDestinos.forEach(ele=>{
+  const temp = document.createElement('div') 
+  const miniTemp = document.createElement('img')
+  miniTemp.src = ele.imgUrl
+  miniTemp.className= "h-64 w-full max-w-full rounded-lg object-cover object-center"
+  // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
+    
+  temp.appendChild(miniTemp)
+  MejoresDestinos.appendChild(temp)
+})
+
+}
+
 
 
 
