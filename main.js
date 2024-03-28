@@ -17,3 +17,63 @@ gallery1.forEach(url=>{
   containerGallery1.appendChild(temp)
 
 })
+
+// core version + navigation, pagination modules:
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper and modules styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
+
+
+
+const mySlidersMejoresDestinos = [
+  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634667/MA_zdayhh.png",label:"Cusco"},
+  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634680/V.CUSCO_ztzzwh.png",label:"Cusco"},
+]
+
+
+const divSwiperMejoresDestinos = document.getElementById('MejoresDestinos')
+
+mySlidersMejoresDestinos.forEach(ele=>{
+  const tempDiv = document.createElement('div')
+  
+  tempDiv.className = "swiper-slide"
+
+  const tempImg = document.createElement("img")
+  tempImg.src= ele.imgUrl
+  tempImg.className = "w-full h-full"
+
+  tempDiv.appendChild(tempImg)
+
+  const tempLabel = document.createElement('p')
+  tempLabel.innerText = ele.label
+  
+  tempDiv.appendChild(tempLabel)
+  divSwiperMejoresDestinos.appendChild(tempDiv)
+})
+const swiperMejoresDestinos = new Swiper('.swiper', {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+ direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+
+
+
