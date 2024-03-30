@@ -106,13 +106,12 @@ itinerario.forEach((ele,index)=>{
       tempImg.height = 450
       tempImg.className = "rounded-lg "
       const tempHeaders = document.createElement('div')
-      tempHeaders.className= "w-4/5 px-10 flex flex-row "
+      tempHeaders.className= "w-4/5 px-10 flex flex-row items-center justify-center"
       const title = document.createElement('p')
-      title.className = "font-bold text-[#54595F] text-[20px] w-56"
+      title.className = "font-bold text-[#54595F] text-[20px] w-fit"
       const ball = document.createElement('div')
-      ball.className = "shrink-0 grow-0 rounded-full border px-2 border-gray-800"
-      ball.innerText= `DIA
-      ${valueWithZero[index]}`
+      ball.className = "shrink-0 grow-0 rounded-full border p-1 px-3 border-gray-800 flex flex-col justify-center items-center text-center border-[#B65F00] border-2 mr-2 ml-5"
+      ball.innerHTML= `<span class="font-extrabold leading-tight text-[13px] text-[#B65F00]">DÍA</span><span class="font-extrabold leading-tight text-[24px] text-[#B65F00]">${valueWithZero[index]}</span>`
 
       title.innerText = ele.title
       tempHeaders.appendChild(ball)
@@ -160,7 +159,7 @@ const itinerario = [
   const ballNumbers = document.getElementById('ballNumbers')
   itinerario.forEach((ele,index)=>{
       const tempDiv = document.createElement('div') 
-      tempDiv.className= "flex flex-row w-full mb-5"
+      tempDiv.className= "flex flex-row w-full mb-8"
       
       const tempImg = document.createElement('img')
       tempImg.src =  ele.imgUrl
@@ -169,7 +168,7 @@ const itinerario = [
       const tempWords = document.createElement('div')
       tempWords.className= "w-1/2 px-10"
       const title = document.createElement('p')
-      title.className = "font-bold text-[#54595F] text-3xl"
+      title.className = "font-bold text-[#54595F] text-3xl mb-2"
       const desc = document.createElement('p')
       desc.className= " text-xl text-[#6B7280]"
       title.innerText = ele.title
@@ -193,9 +192,9 @@ const itinerario = [
     const ball = document.createElement('div')
     if(index == 0){
 
-    ball.className= "w-11 h-11 shrink-0 grow-0 rounded-full bg-[#B65F00] flex items-center justify-center text-white z-10 mt-[100px]"
+    ball.className= "w-11 h-11 shrink-0 grow-0 rounded-full bg-[#B65F00] flex items-center justify-center text-white z-10 mt-[100px] font-bold text-xl"
     }else{
-    ball.className= "w-11 h-11 shrink-0 grow-0 rounded-full bg-[#B65F00] flex items-center justify-center text-white z-10"
+    ball.className= "w-11 h-11 shrink-0 grow-0 rounded-full bg-[#B65F00] flex items-center justify-center text-white z-10 font-bold text-xl"
     }
     ball.innerText = `${index + 1}`
     divItinerario.appendChild(tempDiv)
