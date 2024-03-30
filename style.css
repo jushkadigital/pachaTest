@@ -124,26 +124,76 @@ button:focus-visible {
       width: 54px;
       height: 64px;
     }
-    .swiper {
+    #swiper1 {
   width: 100%;
   height: 600px;
+}
+#swiper2 {
+  width: 100%;
+  height: 300px;
 }
 
 .tripa {
   position:absolute;
   left:calc(50% - 10px);
-  height:100vh;
+  /* height:100vh; */
+  height: 100%;
 
 }
 .miniTripa {
   position:absolute;
   top:0;
   left:calc(50% - 3px);
-  height:100vh;
+  /* height:100vh; */
+  height: 100%;
   border-left-color: #6B7280;
   border-left-style:solid;
   border-left-width: 5.6px;
 }
+.incluye {
+  background-image: url('https://res.cloudinary.com/denkdx0za/image/upload/c_crop,w_400,h_711,ar_9:16/v1711805029/IMAGE-INCLU_y7wrnr.png');
+  background-size: cover;
+}
+.hotelCarac img{
+  width:40.5px;
+  height:40.5px;
+}
+.hotelCarac div {
+  /* width: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-content: center;
+  align-items:center;
+}
+.hotelCarac p {
+  font-size:12px;
+  width:50%;
+  text-align:center;
+}
+.GuiaCarac img{
+  width:40.5px;
+  height:40.5px;
+}
+.GuiaCarac div {
+  /* width: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-content: center;
+  align-items:center;
+}
+.GuiaCarac p {
+  font-size:12px;
+  width:50%;
+  text-align:center;
+}
+.compromisos img{
+  width:40.5px;
+  height:40.5px;
+
+}
+
     @media (min-width: 992px) {
       .banner-principal {
         background-image: url('https://res.cloudinary.com/denkdx0za/image/upload/v1711562707/FONDO_pl6txd.png');
@@ -160,6 +210,30 @@ button:focus-visible {
       .imgOne {
         width: 75%;
       }
+      .incluye {
+    background-image: url('https://res.cloudinary.com/denkdx0za/image/upload/v1711805029/IMAGE-INCLU_y7wrnr.png');
+  }
+  .hotelCarac img{
+  width:100px;
+  height:100px;
+}
+.hotelCarac div {
+  /* width: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-content: center;
+  align-items:center;
+}
+.hotelCarac p {
+  font-size:18px;
+  width:50%;
+  text-align:center;
+}
+  .reconocimiento img{
+    width: 400px;
+    height: 500px;
+  }
     }
 
 
