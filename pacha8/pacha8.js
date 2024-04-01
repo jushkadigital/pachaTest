@@ -279,6 +279,14 @@ mySlidersComida.forEach(ele=>{
   
 const swiper1 = document.getElementById('swiper1')
   swiper1.remove()
+const swiper2 = document.getElementById('swiper2')
+  swiper2.remove()
+  
+const swiper3 = document.getElementById('swiper3')
+  swiper3.remove()
+  
+const swiper4 = document.getElementById('swiper4')
+  swiper4.remove()
  const GalleryMejoresDestinos = [
   {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634667/MA_zdayhh.png",label:"Cusco"},
   {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634680/V.CUSCO_ztzzwh.png",label:"Cusco"},

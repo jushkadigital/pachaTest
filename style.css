@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Nunito";
   line-height: 1.5;
   font-weight: 400;
 
@@ -98,9 +98,6 @@ button:focus-visible {
   }
 }
 
-.general {
-      font-family: Nunito;
-    }
 
     /* preload url('https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_444,h_250,ar_16:9/v1711562707/FONDO_pl6txd.png'); */
     
