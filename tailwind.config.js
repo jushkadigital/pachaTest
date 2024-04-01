@@ -2,7 +2,9 @@
 export default {
   content: [
   "./index.html",
-    "./*.{js,ts,jsx,tsx}",
+  "./pages/pacha8.html",
+    "./*.{js,ts,jsx,tsx,html}",
+    "./pages/*.{js,ts,jsx,tsx,html}",
   ],
   theme: {
     extend: {},
