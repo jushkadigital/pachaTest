@@ -12,7 +12,9 @@ export default defineConfig({
       // Configurar los fragmentos manuales
       input: {
         main: resolve(__dirname, 'index.html'),
-        pacha8: resolve(__dirname, 'pacha8/index.html')
+        pacha8: resolve(__dirname, 'pacha8/index.html'),
+        pacha10: resolve(__dirname, 'pacha10/index.html'),
+
       },
     }
   },
