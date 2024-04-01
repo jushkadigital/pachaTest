@@ -291,7 +291,7 @@ mySlidersFinal.forEach(ele=>{
 
   const tempImg = document.createElement("img")
   tempImg.src= ele.imgUrl
-  tempImg.className = " w-[90%] h-full rounded-[25px] object-cover object-center"
+  tempImg.className = " w-[90%] h-full  rounded-[25px] object-cover object-center"
 
   // const label = document.createElement('p')
   //   label.className = "absolute bottom-5 left-2 text-white text-3xl font-bold"

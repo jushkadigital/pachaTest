@@ -190,7 +190,21 @@ button:focus-visible {
   height:40.5px;
 
 }
-
+.foot {
+    background-image:url('https://res.cloudinary.com/denkdx0za/image/upload/v1712006725/Rectangle_20_b8kqox.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+  }
+  .footi {
+    width: 90%;
+    padding-top: 1.5rem;
+  }
+  .footi img{
+    width: 30px;
+    height: 33px;
+  }
     @media (min-width: 992px) {
       .banner-principal {
         background-image: url('https://res.cloudinary.com/denkdx0za/image/upload/v1711562707/FONDO_pl6txd.png');
