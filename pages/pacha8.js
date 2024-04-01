@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 
 
 
-function show(){
 console.log('pacha8')
 
 const gallery1 = ["https://res.cloudinary.com/denkdx0za/image/upload/v1711571559/asd_ibnvrr.jpg","https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570492/F2_ojyc6h.png","https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570493/F3_usy095.png"]
@@ -378,5 +377,3 @@ galleryHoteles.forEach(url=>{
   temp.appendChild(miniTemp)
   containerGalleryHoteles.appendChild(temp)
 })
-}
-export default show;
