@@ -275,10 +275,61 @@ mySlidersComida.forEach(ele=>{
   // },
 });
 
+
+const divSwiperFinal = document.getElementById('Final')
+const mySlidersFinal = [
+  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_1_a1qorm.png",label:"Cusco"},
+  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_3_dbvffi.png",label:"Cusco"},
+  {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814016/Group_2_nzdrnu.png",label:"Cusco"},
+
+]
+
+mySlidersFinal.forEach(ele=>{
+  const tempDiv = document.createElement('div')
+  
+  tempDiv.className = "swiper-slide relative ml-2"
+
+  const tempImg = document.createElement("img")
+  tempImg.src= ele.imgUrl
+  tempImg.className = " w-[90%] h-full rounded-[25px] object-cover object-center"
+
+  // const label = document.createElement('p')
+  //   label.className = "absolute bottom-5 left-2 text-white text-3xl font-bold"
+  //   label.innerText = ele.label
+
+  tempDiv.appendChild(tempImg)
+  // tempDiv.appendChild(label)
+
+  // const tempLabel = document.createElement('p')
+  // tempLabel.innerText = ele.label
+  
+  // tempDiv.appendChild(tempLabel)
+  divSwiperFinal.appendChild(tempDiv)
+})
+  const swiperFinal = new Swiper('#swiper5', {
+  // configure Swiper to use modules
+  modules: [Navigation, Pagination],
+ direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
+});
+
+
 }else{
   
 const swiper1 = document.getElementById('swiper1')
   swiper1.remove()
+
 const swiper2 = document.getElementById('swiper2')
   swiper2.remove()
   
@@ -287,6 +338,10 @@ const swiper3 = document.getElementById('swiper3')
   
 const swiper4 = document.getElementById('swiper4')
   swiper4.remove()
+
+const swiper5 = document.getElementById('swiper5')
+  swiper5.remove()
+
  const GalleryMejoresDestinos = [
   {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634667/MA_zdayhh.png",label:"Cusco"},
   {imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711634680/V.CUSCO_ztzzwh.png",label:"Cusco"},
@@ -368,6 +423,21 @@ galleryTren.forEach(url=>{
   temp.appendChild(miniTemp)
   containerGalleryTren.appendChild(temp)
 })
+
+
+const galleryFinal = ["https://res.cloudinary.com/denkdx0za/image/upload/v1711571559/asd_ibnvrr.jpg","https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570492/F2_ojyc6h.png","https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570493/F3_usy095.png"]
+
+const containerGalleryFinal = document.getElementById('galleryFinal')
+galleryFinal.forEach(url=>{
+  const temp = document.createElement('div') 
+  const miniTemp = document.createElement('img')
+  miniTemp.src = url
+  miniTemp.className= "h-56 w-full max-w-full rounded-lg object-cover object-center"
+  // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
+  temp.appendChild(miniTemp)
+  containerGalleryFinal.appendChild(temp)
+})
+
 }
 
 
@@ -383,3 +453,37 @@ galleryHoteles.forEach(url=>{
   temp.appendChild(miniTemp)
   containerGalleryHoteles.appendChild(temp)
 })
+
+const ansQues = [
+  {q:"aoeeoa",a: "aoeaeo"},
+
+]
+
+const faq = document.querySelector(".faq-container")
+
+
+ansQues.forEach((ele)=>{
+  const dd = document.createElement('div')
+  dd.className="faq"
+  dd.innerHTML = `<h3 class="faq-title">
+                        ${ele.q}
+            </h3>
+            <p class="faq-text">
+                        ${ele.a}
+            </p>
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+`
+  faq.appendChild(dd)
+})
+
+const toggles = document.querySelectorAll(".faq-toggle");
+
+toggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    toggle.parentNode.classList.toggle("active");
+  });
+});
+

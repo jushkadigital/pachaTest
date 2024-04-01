@@ -1,14 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+
+const withMT = require("@material-tailwind/html/utils/withMT");
+
+module.exports = withMT({
   content: [
-  "./index.html",
-  "./pages/pacha8.html",
+    "./index.html",
+    "./pacha8/pacha8.html",
     "./*.{js,ts,jsx,tsx,html}",
-    "./pages/*.{js,ts,jsx,tsx,html}",
+    "./pacha8/*.{js,ts,jsx,tsx,html}",
   ],
   theme: {
     extend: {},
   },
   plugins: [],
 }
-
+)
