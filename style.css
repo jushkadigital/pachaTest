@@ -213,6 +213,15 @@ button:focus-visible {
       .incluye {
     background-image: url('https://res.cloudinary.com/denkdx0za/image/upload/v1711805029/IMAGE-INCLU_y7wrnr.png');
   }
+  .GuiaCarac img{
+  width:70.5px;
+  height:70.5px;
+}
+  .GuiaCarac p {
+  font-size:20px;
+  width:50%;
+  text-align:center;
+}
   .hotelCarac img{
   width:100px;
   height:100px;
