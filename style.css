@@ -367,6 +367,11 @@ button:focus-visible {
     width: 30px;
     height: 33px;
   }
+    
+  .imgOne {
+    width:70%;
+    height: 80%;
+  }
   
     }
 
