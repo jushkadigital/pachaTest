@@ -337,8 +337,6 @@ if (isMobileDevice()) {
 
 } else {
 
-  const swiper0 =document.getElementById('swiper0')
-  swiper0.remove()
 
   const swiper1 = document.getElementById('swiper1')
   swiper1.remove()
@@ -355,22 +353,22 @@ if (isMobileDevice()) {
   const swiper5 = document.getElementById('swiper5')
   swiper5.remove()
 
-const gallery1 = ["https://res.cloudinary.com/denkdx0za/image/upload/v1711571559/asd_ibnvrr.jpg", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570492/F2_ojyc6h.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570493/F3_usy095.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570491/F5_btfshv.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570705/F6_jtoz5l.png"]
+// const gallery1 = ["https://res.cloudinary.com/denkdx0za/image/upload/v1711571559/asd_ibnvrr.jpg", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570492/F2_ojyc6h.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570493/F3_usy095.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570491/F5_btfshv.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570705/F6_jtoz5l.png"]
 
 
-const containerGallery1 = document.getElementById('galleryClientesFelices')
-console.log(containerGallery1)
-gallery1.forEach(url => {
-  const temp = document.createElement('div')
-  const miniTemp = document.createElement('img')
-  miniTemp.src = url
-  miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-bottom"
-  // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
+// const containerGallery1 = document.getElementById('galleryClientesFelices')
+// console.log(containerGallery1)
+// gallery1.forEach(url => {
+//   const temp = document.createElement('div')
+//   const miniTemp = document.createElement('img')
+//   miniTemp.src = url
+//   miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-bottom"
+//   // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
 
-  temp.appendChild(miniTemp)
-  containerGallery1.appendChild(temp)
+//   temp.appendChild(miniTemp)
+//   containerGallery1.appendChild(temp)
 
-})
+// })
 
 
 
