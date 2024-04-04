@@ -92,14 +92,22 @@ if (isMobileDevice()) {
 
 
   const itinerario = [
-    { title: "Llegada a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711645766/LLEGADA-LIMA_yyqeed.png", desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú." },
-    { title: "Icas Paracas Full Day", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711646387/HUACACHINS_cya0q5.png", desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding." },
-    { title: "Vuelo a Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711634680/V.CUSCO_ztzzwh.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Valle Conexión", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067854/VALLE_prgwdc.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Machu Picchu", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067908/MACHU_mmv4xy.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Montaña de 7 Colores", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067921/MONTA%C3%91A_p5qbjx.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Tour Vivencial Andino", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067939/TOUR_VIVENCIAL_ANDINO_jjsc4m.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Vuelo a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067980/RETORNO-LIMA_mhfiq3.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "Llegada a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711645766/LLEGADA-LIMA_yyqeed.png", 
+      desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú." },
+    { title: "Icas Paracas Full Day", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711646387/HUACACHINS_cya0q5.png", 
+      desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding." },
+    { title: "Vuelo a Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711634680/V.CUSCO_ztzzwh.png", 
+      desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento y le llevara con dirección al Aeropuerto para el vuelo hacia la ciudad del Cusco. A la salida del Aeropuerto de Cusco un agente nuestro lo esperara con un cartel para trasladarlo a su alojamiento." },
+    { title: "Valle Conexión", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067854/VALLE_prgwdc.png", 
+      desc: "Iniciaremos esta excursion con una vista del Valle Sagrado en el Mirador de Taray. Luego nos dirigiremos a Pisac donde visitaremos el complejo arqueológico. Posteriormente tomaremos rumbo a Urubamba donde tendremos el almuerzo Buffet y terminaremos en Ollantaytambo" },
+    { title: "Machu Picchu", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067908/MACHU_mmv4xy.png", 
+      desc: "Nuestro guía le esperara a la hora y en el lugar de encuentro para dirigirnos a la estación de buses y ser transportados hacia la Llaqta de Machu Picchu. En Machu Picchu el recorrido será con nuestro guía profesional y tendrá tiempo suficiente para tomarse las mejores fotos." },
+    { title: "Montaña de 7 Colores", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067921/MONTA%C3%91A_p5qbjx.png", 
+      desc: "Esta excursión inicia a las 04:00 de la mañana dirigiéndonos al distrito de Cusipata donde tendremos nuestro desayuno, luego nos dirigiremos a la localidad de Chillihuani donde iniciara nuestra caminata hacia la Montaña de Colores. descansar y prepararse para iniciar su aventura por Perú." },
+    { title: "Tour Vivencial Andino", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067939/TOUR_VIVENCIAL_ANDINO_jjsc4m.png", 
+      desc: "Esta experiencia se realiza en Ccaccaccollo donde realizaremos actividades como observar el Proceso de la Fibra de Camélidos, la caminata al Circuito de Miradores, ser partícipes de una Danza Típica y Ceremonia Andina y participar del trabajo cotidiano de los pobladores." },
+    { title: "Vuelo a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067980/RETORNO-LIMA_mhfiq3.png", 
+      desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento para trasladarlo al aeropuerto y tomar el vuelo a Lima. En el Aeropuerto de Lima realizara el Check In correspondiente para su vuelo internacional y continuar su viaje hacia su País de Origen" },
   ]
 
 
@@ -173,7 +181,6 @@ if (isMobileDevice()) {
     modules: [Navigation, Pagination],
     direction: 'horizontal',
     loop: true,
-
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -189,9 +196,9 @@ if (isMobileDevice()) {
 
   const divSwiperGuia = document.getElementById('Guia')
   const mySlidersGuia = [
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_1_a1qorm.png", label: "Cusco" },
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_3_dbvffi.png", label: "Cusco" },
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814016/Group_2_nzdrnu.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711815955/G2_llopch.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711815961/G3_jyij4r.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1711815955/G1_ug0oar.png", label: "Cusco" },
   ]
 
   mySlidersGuia.forEach(ele => {
@@ -237,9 +244,9 @@ if (isMobileDevice()) {
 
   const divSwiperComida = document.getElementById('Comida')
   const mySlidersComida = [
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_1_a1qorm.png", label: "Cusco" },
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_3_dbvffi.png", label: "Cusco" },
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814016/Group_2_nzdrnu.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1712068735/P3_mqgfjq.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1712068734/P2_qnzuiy.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1712068728/P1_xz8wvc.png", label: "Cusco" },
 
   ]
 
@@ -286,9 +293,9 @@ if (isMobileDevice()) {
 
   const divSwiperFinal = document.getElementById('Final')
   const mySlidersFinal = [
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_1_a1qorm.png", label: "Cusco" },
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_3_dbvffi.png", label: "Cusco" },
-    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814016/Group_2_nzdrnu.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1712072055/WALKING_e9ffn7.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1712072047/PLANTA_x0iwxz.png", label: "Cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_3:4/v1712072062/PICNIC_sqzjvs.png", label: "Cusco" },
 
   ]
 
@@ -333,7 +340,7 @@ if (isMobileDevice()) {
   });
 
 
-const divSwiperAutori = document.getElementById('Autori')
+  const divSwiperAutori = document.getElementById('Autori')
   const mySlidersAutori = [
     { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_270,h_360,ar_3:4/v1712239545/certiOne1024x1024_lef8ld.png", label: "certificados por la direccion de comercio exterior y turismo" },
     { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_270,h_360,ar_3:4/v1712239545/certiTwo1024x1024_vroqgv.png", label: "certificados por el gobierno regional del cusco" },
@@ -607,7 +614,15 @@ const divSwiperAutori = document.getElementById('Autori')
 
 
 const ansQues = [
-  { q: "aoeeoa", a: "aoeaeo" },
+  {
+    q: "¿Cuál es la mejor temporada para hacer una excursión en Cusco, Lima , Ica , Puerto Maldonado?",
+    a: "CUSCO . La temporada seca es la mejor, va de mayo a octubre, es considerada la mejor para visitar Cusco y Machu Picchu. Puesto que hay menos probabilidades de lluvias, y los días suelen ser más soleados y agradables. Si quieres disfrutar de las fiestas tradicionales como la Fiesta del Sol o el Inti Raymi, te recomiendo ir entre junio y agosto.LIMA Lima tiene un clima subtropical y una temporada de verano que va de diciembre a abril. Durante estos meses, el clima es más cálido y seco, ideal para explorar la ciudad y sus alrededores. Sin embargo, ten en cuenta que Lima puede ser visitada durante todo el año.ICA.La región de Ica tiene un clima desértico con temperaturas elevadas. La mejor época para visitar Ica y sus atracciones como la Reserva Nacional de Paracas y el oasis de Huacachina es durante la temporada seca, de mayo a octubre.PUERO MALDONADO :La temporada seca, de abril a noviembre, es generalmente más recomendada para excursiones en la selva, ya que los niveles de agua son más bajos y las condiciones son más propicias para explorar la flora y fauna."
+  },
+
+  {
+    q: "A que altura se encuentra la montaña de 7 colores y laguna de humantay y cuál es la temperatura",
+    a: "Laguna Humantay: La Laguna Humantay está ubicada a una altitud aproximada de 4,200 metros sobre el nivel del mar (13,780 pies). Temperatura: La temperatura en la Laguna Humantay puede variar, pero generalmente, debido a su elevada altitud, las temperaturas pueden ser heladas. Durante el día, las temperaturas pueden oscilar entre 10°C y 15°C (50°F a 59°F), mientras que por la noche pueden descender significativamente. Montaña Vinicunca (Montaña de Siete Colores): La Montaña Vinicunca, también conocida como la Montaña de Siete Colores o Rainbow Mountain, se encuentra a una altitud elevada, alrededor de 5,200 metros sobre el nivel del mar (17,060 pies). Temperatura: La temperatura en la Montaña de Siete Colores puede ser bastante fría debido a su altitud. Durante el día, las temperaturas pueden rondar los 5°C a 10°C (41°F a 50°F) y pueden descender por debajo de cero durante la noche. Es importante llevar ropa abrigada debido a las bajas temperaturas y la exposición al viento."
+  },
 
 ]
 
@@ -616,7 +631,7 @@ const faq = document.querySelector(".faq-container")
 
 ansQues.forEach((ele) => {
   const dd = document.createElement('div')
-  dd.className = "faq"
+  dd.className = "faq "
   dd.innerHTML = `<h3 class="faq-title">
                         ${ele.q}
             </h3>
@@ -624,8 +639,10 @@ ansQues.forEach((ele) => {
                         ${ele.a}
             </p>
             <button class="faq-toggle">
-              <i class="fas fa-chevron-down"></i>
-              <i class="fas fa-times"></i>
+              
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+</svg>
             </button>
 `
   faq.appendChild(dd)

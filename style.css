@@ -98,6 +98,11 @@ button:focus-visible {
   }
 }
 
+.general{
+  background-image: url('../FONDO-ENTERO-p.jpg');
+  background-repeat: repeat;
+}
+
 
     /* preload url('https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_444,h_250,ar_16:9/v1711562707/FONDO_pl6txd.png'); */
     
@@ -205,6 +210,116 @@ button:focus-visible {
     width: 30px;
     height: 33px;
   }
+
+  .tripleImg div img{
+  width:150px;
+  height:200px;
+}
+.containerVideo {
+      display: flex;
+      justify-content: center;
+ }
+
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
+}
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.faq.active {
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: "\f075";
+  font-family: "Nunito";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 20px;
+  z-index: 0;
+}
+
+.faq.active::before {
+  color: #3498db;
+  top: -10px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+}
+
+.faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+}
+
+.faq-toggle:focus {
+  outline: 0;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
+
+
     @media (min-width: 992px) {
       .banner-principal {
         background-image: url('https://res.cloudinary.com/denkdx0za/image/upload/v1711562707/FONDO_pl6txd.png');
@@ -280,12 +395,13 @@ button:focus-visible {
 .faq.active {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
 }
 
 .faq.active::before,
 .faq.active::after {
   content: "\f075";
-  font-family: "Font Awesome 5 Free";
+  font-family: "Nunito";
   color: #2ecc71;
   font-size: 7rem;
   position: absolute;
@@ -372,6 +488,11 @@ button:focus-visible {
     width:70%;
     height: 80%;
   }
+  
+  .tripleImg div img{
+  width:300px;
+  height:400px;
+}
   
     }
 
