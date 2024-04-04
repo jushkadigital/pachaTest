@@ -50,6 +50,7 @@ if (isMobileDevice()) {
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
+    tempImg.loading = "lazy"
     tempImg.className = " w-[90%] h-full rounded-[25px] object-cover object-center"
 
     const label = document.createElement('p')
@@ -120,6 +121,7 @@ if (isMobileDevice()) {
     tempDiv.className = "flex flex-col items-center gap-y-5"
     const tempImg = document.createElement('img')
     tempImg.src = ele.imgUrl
+    tempImg.loading = "lazy"
     tempImg.width = 350
     tempImg.height = 450
     tempImg.className = "rounded-lg "
@@ -161,6 +163,7 @@ if (isMobileDevice()) {
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
+    tempImg.loading = "lazy"
     tempImg.className = " w-[90%] h-full rounded-[25px] object-cover object-center"
 
     // const label = document.createElement('p')
@@ -208,6 +211,7 @@ if (isMobileDevice()) {
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
+    tempImg.loading = "lazy"
     tempImg.className = " w-[90%] h-full rounded-[25px] object-cover object-center"
 
     // const label = document.createElement('p')
@@ -257,6 +261,7 @@ if (isMobileDevice()) {
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
+    tempImg.loading = "lazy"
     tempImg.className = " w-[90%] h-full rounded-[25px] object-cover object-center"
 
     // const label = document.createElement('p')
@@ -306,6 +311,7 @@ if (isMobileDevice()) {
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
+    tempImg.loading = "lazy"
     tempImg.className = " w-[90%] h-full  rounded-[25px] object-cover object-center"
 
     // const label = document.createElement('p')
@@ -353,6 +359,7 @@ if (isMobileDevice()) {
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
+    tempImg.loading = "lazy"
     tempImg.className = " w-[90%] h-full  rounded-[25px] object-cover object-center"
     const label = document.createElement('p')
     label.className = "absolute bottom-0 left-2 text-white text-md font-bold uppercase px-2 bg-[#B65F00] w-full text-center h-14 text-align"
@@ -443,6 +450,7 @@ if (isMobileDevice()) {
     temp.className = "relative brightness-75"
     const miniTemp = document.createElement('img')
     miniTemp.src = ele.imgUrl
+    tempImg.loading = "lazy"
     miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-center"
     const label = document.createElement('p')
     label.className = "absolute bottom-5 left-2 text-white text-3xl font-bold"
@@ -474,6 +482,7 @@ if (isMobileDevice()) {
 
     const tempImg = document.createElement('img')
     tempImg.src = ele.imgUrl
+    tempImg.loading = "lazy"
     tempImg.width = 350
     tempImg.height = 450
     const tempWords = document.createElement('div')
@@ -520,6 +529,7 @@ if (isMobileDevice()) {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
     miniTemp.src = url
+    tempImg.loading = "lazy"
     miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
     temp.appendChild(miniTemp)
@@ -538,6 +548,7 @@ if (isMobileDevice()) {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
     miniTemp.src = url
+    tempImg.loading = "lazy"
     miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
     temp.appendChild(miniTemp)
@@ -551,6 +562,7 @@ if (isMobileDevice()) {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
     miniTemp.src = url
+    tempImg.loading = "lazy"
     miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
     temp.appendChild(miniTemp)
@@ -563,6 +575,7 @@ if (isMobileDevice()) {
   galleryComida.forEach(url => {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
+    tempImg.loading = "lazy"
     miniTemp.src = url
     miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
@@ -582,6 +595,7 @@ if (isMobileDevice()) {
     const temp = document.createElement('div')
     temp.className = "relative"
     const miniTemp = document.createElement('img')
+    miniTemp.loading = "lazy"
     miniTemp.src = ele.imgUrl
     miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-center"
 
@@ -601,6 +615,7 @@ if (isMobileDevice()) {
   galleryFinal.forEach(url => {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
+    miniTemp.loading = "lazy"
     miniTemp.src = url
     miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
