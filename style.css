@@ -321,6 +321,20 @@ iframe {
 
 
     @media (min-width: 992px) {
+      .banner .desc{
+ position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 0;
+    
+  }
+    .banner .pacha {
+position: absolute;
+  width: 100%;
+  top: 0;
+  margin-bottom: 0;
+
+  }
       .banner-principal {
         background-image: url('https://res.cloudinary.com/denkdx0za/image/upload/v1711562707/FONDO_pl6txd.png');
         background-repeat: no-repeat;
