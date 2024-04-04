@@ -623,7 +623,40 @@ const ansQues = [
     q: "A que altura se encuentra la montaña de 7 colores y laguna de humantay y cuál es la temperatura",
     a: "Laguna Humantay: La Laguna Humantay está ubicada a una altitud aproximada de 4,200 metros sobre el nivel del mar (13,780 pies). Temperatura: La temperatura en la Laguna Humantay puede variar, pero generalmente, debido a su elevada altitud, las temperaturas pueden ser heladas. Durante el día, las temperaturas pueden oscilar entre 10°C y 15°C (50°F a 59°F), mientras que por la noche pueden descender significativamente. Montaña Vinicunca (Montaña de Siete Colores): La Montaña Vinicunca, también conocida como la Montaña de Siete Colores o Rainbow Mountain, se encuentra a una altitud elevada, alrededor de 5,200 metros sobre el nivel del mar (17,060 pies). Temperatura: La temperatura en la Montaña de Siete Colores puede ser bastante fría debido a su altitud. Durante el día, las temperaturas pueden rondar los 5°C a 10°C (41°F a 50°F) y pueden descender por debajo de cero durante la noche. Es importante llevar ropa abrigada debido a las bajas temperaturas y la exposición al viento."
   },
+{
+    q: "Qué tipo de ropa debo llevar para mis excursiones en Cusco , Lima , Ica , Puerto Mladonado?",
+    a: "Cusco : Viste capas ligeras , cómodas y abrigadoras . Incluye una camiseta de manga larga o corta, pantalones ligeros y un sombrero para protegerte del sol. Para las temporadas de lluvias en Cusco lleva ropa muy abrigadora y casacas o un suéter inpermiables . Lima:Lima tiene un clima templado. Usa ropa ligera, como camisetas, pantalones cortos o faldas, y un sombrero para protegerte del sol. Lleva protector solar. Ica (Huacachina y Paracas): Debido al clima desértico, lleva ropa fresca y protector solar. Un sombrero y gafas de sol son esenciales. Y para las noches puede ser una chaqueta o suéter ligero. Puerto Maldonado (Amazonía): Usa ropa ligera y cómoda debido al clima cálido y húmedo. Un sombrero y repelente de insectos son esenciales. Un impermeable también puede ser útil, ya que la región puede experimentar lluvias."
+  },
 
+  {
+    q: "Que puedo hacer para prevenir el mal de altura",
+    a: "Antes del viaje: Debes informarte sobre la altitud de los lugares que vas a visitar y planificar tu ruta de forma gradual y progresiva2. No subas más de 500 metros al día y descansa un día extra cada 1000 metros Durante el viaje: Bebe abundante agua y líquidos isotónicos para mantenerte hidratado y evitar la deshidratación4 Come alimentos variados y ricos en hidratos de carbono para tener energía y evitar el hambre Evita el alcohol, el tabaco y las comidas muy copiosas que pueden empeorar los síntomas"
+  },
+  {
+    q: "Qué hacer si me afecto la altura del lugar",
+    a: "Descender a una altitud más baja: Si los síntomas son graves o empeoran, desciende a una altitud más baja tan pronto como sea posible. Descanso y aclimatación: Tómate un tiempo para descansar y permitir que tu cuerpo se aclimate gradualmente a la altitud. Hidratación:Bebe mucha agua para combatir la deshidratación, pero evita el alcohol y la cafeína, ya que pueden contribuir a la deshidratación. Medicamentos: Considera el uso de medicamentos recetados por un médico, para aliviar los síntomas del mal de altura. Oxígeno suplementario: En algunos lugares, se puede proporcionar oxígeno suplementario en caso de emergencia. Busca ayuda médica y considera el uso de oxígeno si es necesario."
+  },
+  {
+    q: "¿Con qué método de pago se pueden efectuar la reserva de un tour?",
+    a: "Los medios de pagos que se pueden utilizar para reservar un tour es mediante links de pago de las plataformas de IZIPAY , OPENPAY ,PAYPAL . Estos pagos permiten el uso de trarjeta de debito y  crédito: como Visa, MasterCard, American Express y otras."
+  },
+  {
+    q: "Que documentos necesito para mis excursiones en el Peru?",
+    a: "Dependiendo del pais de donde vienes es muy importante que tengas tu cedula de identidad o pasaporte . En caso de tu pasaporte asegúrate que esté vigente por lo menos seis meses despues desde tu fecha de viaje."
+  },
+  {
+    q: "Que documentos necesito para ingresar a Machupicchu",
+    a: "Para poder ingresar a la fortaleza de Machu Picchu, uno de los destinos turísticos más icónicos de Perú, necesitarás ciertos documentos. Boleto de entrada a Machu Picchu: Este es el documento principal que necesitarás. Debes comprar tu boleto de entrada con anticipación, ya sea en línea o en Cusco (o Aguas Calientes, el pueblo cercano a Machu Picchu). Cedula de Identidad o Pasaporte: Lleva contigo el pasaporte o cedula de identidad con el que hiciste la reserva de tu boleto de entrada."
+  },
+  {
+    q: "Que tickets necesito para llegar y entrar a Machupicchu",
+    a: "Para llegar y entrar a Machu Picchu, necesitarás varios tickets y documentos. Aquí hay una lista de los tickets esenciales que deberías considerar: Boleto de tren: Si viajas desde Cusco o el Valle Sagrado, necesitarás un boleto de tren para llegar a Aguas Calientes. Asegúrate de reservar tu boleto de tren con anticipación. Boleto de autobús a Machu Picchu (opcional): Desde Aguas Calientes, el acceso a Machu Picchu se realiza mediante un servicio de autobús que sube la empinada carretera hasta la entrada del sitio arqueológico. Puedes comprar los boletos para el autobús en Aguas Calientes antes de abordar o reservarlos con anticipacion . Boleto de entrada a Machu Picchu: El boleto de entrada a Machu Picchu es esencial y debe ser adquirido con anticipación. Puedes comprar estos boletos a través de la página web oficial del Ministerio de Cultura de Perú o en agencias autorizadas. Pasaporte: Lleva contigo el pasaporte con el que hiciste la reserva de tu boleto de entrada a Machu Picchu. La entrada al sitio arqueológico suele requerir la presentación del pasaporte."
+  },
+  {
+    q: "¿Debo tener mi vacuna contra la fiebre amarillas para hacer mis excursiones en Puerto Maldonado?",
+    a: "La vacuna contra la fiebre amarilla es recomendada para aquellos que viajan a áreas donde existe el riesgo de contraer la enfermedad, y esto incluye algunas regiones de América del Sur, como la Amazonía, donde se encuentra Puerto Maldonado en Perú. Aunque la fiebre amarilla no es obligatoria para ingresar a Perú desde la mayoría de los países, la situación puede variar, y algunos países pueden requerir la vacuna como parte de sus regulaciones de salud pública Aunque la vacuna contra la fiebre amarilla puede no ser obligatoria para ingresar a Puerto Maldonado , se recomienda encarecidamente para aquellos que viajan a áreas de riesgo, como la Amazonía. La fiebre amarilla es transmitida por mosquitos y puede ser una enfermedad grave."
+  },
+  
 ]
 
 const faq = document.querySelector(".faq-container")
