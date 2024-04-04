@@ -450,7 +450,7 @@ if (isMobileDevice()) {
     temp.className = "relative brightness-75"
     const miniTemp = document.createElement('img')
     miniTemp.src = ele.imgUrl
-    tempImg.loading = "lazy"
+    miniTemp.loading = "lazy"
     miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-center"
     const label = document.createElement('p')
     label.className = "absolute bottom-5 left-2 text-white text-3xl font-bold"
