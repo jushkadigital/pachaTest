@@ -144,13 +144,12 @@ if (isMobileDevice()) {
     { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_1_a1qorm.png", label: "Cusco" },
     { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_3_dbvffi.png", label: "Cusco" },
     { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814016/Group_2_nzdrnu.png", label: "Cusco" },
-
   ]
 
   mySlidersTren.forEach(ele => {
     const tempDiv = document.createElement('div')
 
-    tempDiv.className = "swiper-slide relative ml-2"
+    tempDiv.className = "swiper-slide relative"
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
@@ -193,13 +192,12 @@ if (isMobileDevice()) {
     { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_1_a1qorm.png", label: "Cusco" },
     { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_3_dbvffi.png", label: "Cusco" },
     { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711814016/Group_2_nzdrnu.png", label: "Cusco" },
-
   ]
 
   mySlidersGuia.forEach(ele => {
     const tempDiv = document.createElement('div')
 
-    tempDiv.className = "swiper-slide relative ml-2"
+    tempDiv.className = "swiper-slide relative"
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
@@ -248,7 +246,7 @@ if (isMobileDevice()) {
   mySlidersComida.forEach(ele => {
     const tempDiv = document.createElement('div')
 
-    tempDiv.className = "swiper-slide relative ml-2"
+    tempDiv.className = "swiper-slide relative "
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
@@ -297,7 +295,7 @@ if (isMobileDevice()) {
   mySlidersFinal.forEach(ele => {
     const tempDiv = document.createElement('div')
 
-    tempDiv.className = "swiper-slide relative ml-2"
+    tempDiv.className = "swiper-slide relative "
 
     const tempImg = document.createElement("img")
     tempImg.src = ele.imgUrl
@@ -335,6 +333,56 @@ if (isMobileDevice()) {
   });
 
 
+const divSwiperAutori = document.getElementById('Autori')
+  const mySlidersAutori = [
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_270,h_360,ar_3:4/v1712239545/certiOne1024x1024_lef8ld.png", label: "certificados por la direccion de comercio exterior y turismo" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_270,h_360,ar_3:4/v1712239545/certiTwo1024x1024_vroqgv.png", label: "certificados por el gobierno regional del cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_270,h_360,ar_3:4/v1712239546/certiThree1024x1024_fixvnh.png", label: "licencia" },
+  ]
+  mySlidersAutori.forEach(ele => {
+    const tempDiv = document.createElement('div')
+
+    tempDiv.className = "swiper-slide relative "
+
+    const tempImg = document.createElement("img")
+    tempImg.src = ele.imgUrl
+    tempImg.className = " w-[90%] h-full  rounded-[25px] object-cover object-center"
+    const label = document.createElement('p')
+    label.className = "absolute bottom-0 left-2 text-white text-md font-bold uppercase px-2 bg-[#B65F00] w-full text-center h-14 text-align"
+    label.innerText = ele.label
+
+
+    // const label = document.createElement('p')
+    //   label.className = "absolute bottom-5 left-2 text-white text-3xl font-bold"
+    //   label.innerText = ele.label
+
+    tempDiv.appendChild(tempImg)
+    tempDiv.appendChild(label)
+    // tempDiv.appendChild(label)
+
+    // const tempLabel = document.createElement('p')
+    // tempLabel.innerText = ele.label
+
+    // tempDiv.appendChild(tempLabel)
+    divSwiperAutori.appendChild(tempDiv)
+  })
+  const swiperAutori = new Swiper('#swiperAutori', {
+    // configure Swiper to use modules
+    modules: [Navigation, Pagination],
+    direction: 'horizontal',
+    loop: true,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+  });
+
+
 } else {
 
 
@@ -353,22 +401,22 @@ if (isMobileDevice()) {
   const swiper5 = document.getElementById('swiper5')
   swiper5.remove()
 
-// const gallery1 = ["https://res.cloudinary.com/denkdx0za/image/upload/v1711571559/asd_ibnvrr.jpg", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570492/F2_ojyc6h.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570493/F3_usy095.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570491/F5_btfshv.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570705/F6_jtoz5l.png"]
+  // const gallery1 = ["https://res.cloudinary.com/denkdx0za/image/upload/v1711571559/asd_ibnvrr.jpg", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570492/F2_ojyc6h.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570493/F3_usy095.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570491/F5_btfshv.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570705/F6_jtoz5l.png"]
 
 
-// const containerGallery1 = document.getElementById('galleryClientesFelices')
-// console.log(containerGallery1)
-// gallery1.forEach(url => {
-//   const temp = document.createElement('div')
-//   const miniTemp = document.createElement('img')
-//   miniTemp.src = url
-//   miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-bottom"
-//   // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
+  // const containerGallery1 = document.getElementById('galleryClientesFelices')
+  // console.log(containerGallery1)
+  // gallery1.forEach(url => {
+  //   const temp = document.createElement('div')
+  //   const miniTemp = document.createElement('img')
+  //   miniTemp.src = url
+  //   miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-bottom"
+  //   // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
 
-//   temp.appendChild(miniTemp)
-//   containerGallery1.appendChild(temp)
+  //   temp.appendChild(miniTemp)
+  //   containerGallery1.appendChild(temp)
 
-// })
+  // })
 
 
 
@@ -472,14 +520,18 @@ if (isMobileDevice()) {
   })
 
 
-  const galleryTren = ["", "", ""]
+  const galleryTren = [
+    "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_1_a1qorm.png",
+    "https://res.cloudinary.com/denkdx0za/image/upload/v1711814017/Group_3_dbvffi.png",
+    "https://res.cloudinary.com/denkdx0za/image/upload/v1711814016/Group_2_nzdrnu.png",
+  ]
 
   const containerGalleryTren = document.getElementById('galleryTren')
   galleryTren.forEach(url => {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
     miniTemp.src = url
-    miniTemp.className = "h-56 w-full max-w-full rounded-lg object-cover object-center"
+    miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
     temp.appendChild(miniTemp)
     containerGalleryTren.appendChild(temp)
@@ -511,7 +563,32 @@ if (isMobileDevice()) {
     containerGalleryComida.appendChild(temp)
   })
 
-  const galleryFinal = ["https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_450,ar_4:3/v1712072072/CENASHOW_jolhhf.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_450,ar_4:3/v1712072055/WALKING_e9ffn7.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_450,ar_4:3/v1712072047/PLANTA_x0iwxz.png","https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_450,ar_4:3/v1712072062/PICNIC_sqzjvs.png"]
+
+  const galleryAutori = [
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_600,ar_1:1/v1712239545/certiOne1024x1024_lef8ld.png", label: "certificados por la direccion de comercio exterior y turismo" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_600,ar_1:1/v1712239545/certiTwo1024x1024_vroqgv.png", label: "certificados por el gobierno regional del cusco" },
+    { imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_600,ar_1:1/v1712239546/certiThree1024x1024_fixvnh.png", label: "licencia" },
+  ]
+
+  const containerGalleryAutori = document.getElementById('galleryAutori')
+  galleryAutori.forEach(ele => {
+    const temp = document.createElement('div')
+    temp.className = "relative"
+    const miniTemp = document.createElement('img')
+    miniTemp.src = ele.imgUrl
+    miniTemp.className = "h-96 w-full max-w-full rounded-lg object-cover object-center"
+
+    const label = document.createElement('p')
+    label.className = "absolute bottom-0 left-2 text-white text-md font-bold uppercase px-2 bg-[#B65F00] w-full text-center h-14 text-align"
+    label.innerText = ele.label
+
+    temp.appendChild(miniTemp)
+    temp.appendChild(label)
+    containerGalleryAutori.appendChild(temp)
+  })
+
+
+  const galleryFinal = ["https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_450,ar_4:3/v1712072072/CENASHOW_jolhhf.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_450,ar_4:3/v1712072055/WALKING_e9ffn7.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_450,ar_4:3/v1712072047/PLANTA_x0iwxz.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_600,h_450,ar_4:3/v1712072062/PICNIC_sqzjvs.png"]
 
   const containerGalleryFinal = document.getElementById('galleryFinal')
   galleryFinal.forEach(url => {

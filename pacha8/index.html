@@ -22,8 +22,8 @@
     </div>
     <div class="lg:px-[300px] mt-[15px] flex flex-col ">
 
-      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-center" >
-        <div class="flex justify-center lg:justify-start lg:w-1/3" >
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-center">
+        <div class="flex justify-center lg:justify-start lg:w-1/3">
           <div class="w-1/2 lg:w-full">
             <div class="text-center lg:!text-left">
               <p class="font-bold text-[16px] lg:text-3xl text-[#B65F00] leading-none">Descubre la </p>
@@ -48,7 +48,7 @@
           </div>
 
         </div>
-        <div class="w-full flex justify-center lg:w-2/3" >
+        <div class="w-full flex justify-center lg:w-2/3">
           <img class="imgOne" width="400" height="600"
             src="https://res.cloudinary.com/denkdx0za/image/upload/v1711567929/I2_r4w1ac.png">
         </div>
@@ -485,10 +485,40 @@
       </div>
 
       <div class="flex flex-col lg:flex-row">
-        <div class=" lg:w-1/2">
+        <div class=" lg:w-1/2 relative h-[700px]">
+          <div class="absolute top-[5%] left-0">
+            <picture>
 
+              <source media="(min-width: 800px)"
+                srcset="https://res.cloudinary.com/demo/image/upload/ar_2:1,c_fill,g_face/f_auto/q_auto/c_scale,w_800/docs/guitar-man.jpg 800w, 
+  https://res.cloudinary.com/demo/image/upload/ar_2:1,c_fill,g_face/f_auto/q_auto/c_scale,w_1600/docs/guitar-man.jpg 1600w" sizes="100vw" />
+
+              <source media="(min-width: 600px)" srcset="https://res.cloudinary.com/demo/image/upload/f_auto/q_auto/c_scale,w_600/docs/guitar-man.jpg 600w, 
+  https://res.cloudinary.com/demo/image/upload/f_auto/q_auto/c_scale,w_1200/docs/guitar-man.jpg 1200w" sizes="100vw" />
+
+              <img
+                srcset="https://res.cloudinary.com/demo/image/upload/ar_1:1,c_thumb,g_face/f_auto/q_auto/c_scale,w_400/docs/guitar-man.jpg 400w, 
+  https://res.cloudinary.com/demo/image/upload/ar_1:1,c_thumb,g_face/f_auto/q_auto/c_scale,w_800/docs/guitar-man.jpg 800w"
+                src="https://res.cloudinary.com/demo/image/upload/f_auto/q_auto/c_scale,w_400/docs/guitar-man.jpg"
+                alt="Man playing guitar" sizes="100vw" />
+
+            </picture>
+            <!--   sizes="(min-width: 600px) 150px, 300px" -->
+            <!--   srcset="https://res.cloudinary.com/denkdx0za/image/upload/c_fill%2Cw_300%2Ch_400par_3:4/v1712236750/PLAZA_qqbfxw.png 300w," -->
+            <!--   src="https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_300,h_400,ar_3:4/v1712236750/PLAZA_qqbfxw.png" -->
+            <!--   alt="aoe"> -->
+
+          </div>
+          <div class="absolute top-[45%] left-[26%]">
+            <img class="rounded-[35px]"
+              src="https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_300,h_400,ar_3:4/v1712236750/LO2_qpauwj.png">
+          </div>
+          <div class="absolute top-[16%] left-[50%]">
+            <img class="rounded-[35px]"
+              src="https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_300,h_400,ar_3:4/v1712236750/MACH_p1tjsm.png">
+          </div>
         </div>
-        <div class="flex flex-col compromisos px-10 gap-y-5">
+        <div class="flex flex-col compromisos px-10 gap-y-5 lg:gap-y-10 lg:w-1/2 lg:justify-center">
           <div class="flex flex-row">
             <img src="../COMPROMISO.png" width="150" height="150">
             <div class="flex flex-col ml-5 lg:ml-10">
@@ -533,24 +563,27 @@
 
 
       </div>
-      <div class="my-10 flex justify-center shadow-2xl bg-white  p-5 rounded-2xl">
+      <div class="my-10 flex justify-center shadow-2xl shadow-gray-900 bg-white  p-5 rounded-2xl lg:mt-16">
         <div class="grid grid-cols-4 gap-0 lg:gap-4 sm:grid-cols-2 md:grid-cols-4 px-0 lg:px-0  text-gray-700">
 
           <div class="flex flex-col items-center">
-            <p class="font-extrabold text-[20px] lg:text-3xl text-[#B65F00] ">+5k</p>
+            <p class="font-extrabold text-[20px] lg:text-3xl text-[#B65F00] ">+2k</p>
             <p class="font-bold text-[12px] lg:text-xl  text-[#5C5C5C] text-center">VIAJEROS FELICES</p>
           </div>
           <div class="flex flex-col items-center">
-            <p class="font-extrabold text-[20px] lg:text-3xl text-[#B65F00] ">+5k</p>
-            <p class="font-bold text-[12px] lg:text-xl  text-[#5C5C5C] text-center">VIAJEROS FELICES</p>
+            <p class="font-extrabold text-[20px] lg:text-3xl text-[#B65F00] ">+30</p>
+            <p class="font-bold text-[12px] lg:text-xl  text-[#5C5C5C] text-center">ATRACTIVOS
+              TURISTICOS</p>
           </div>
           <div class="flex flex-col items-center">
-            <p class="font-extrabold text-[20px] lg:text-3xl text-[#B65F00] ">+5k</p>
-            <p class="font-bold text-[12px] lg:text-xl  text-[#5C5C5C] text-center">VIAJEROS FELICES</p>
+            <p class="font-extrabold text-[20px] lg:text-3xl text-[#B65F00] ">+15</p>
+            <p class="font-bold text-[12px] lg:text-xl  text-[#5C5C5C] text-center">15 AÑOS DE
+              EXPERIENCIA</p>
           </div>
           <div class="flex flex-col items-center">
-            <p class="font-extrabold text-[20px] lg:text-3xl text-[#B65F00] ">+5k</p>
-            <p class="font-bold text-[12px] lg:text-xl  text-[#5C5C5C] text-center">VIAJEROS FELICES</p>
+            <p class="font-extrabold text-[20px] lg:text-3xl text-[#B65F00] ">+1k</p>
+            <p class="font-bold text-[12px] lg:text-xl  text-[#5C5C5C] text-center">AGENCIAS DE
+              VIAJES ATENDIDAS</p>
           </div>
 
         </div>
@@ -578,7 +611,7 @@
         <h2 class=" text-[#B65F00]  text-[20px] lg:text-3xl font-extrabold text-center ">NUESTROS AUTORIZACIONES</h2>
       </div>
 
-      <div class="flex flex-col lg:flex-row  lg:p-10  rounded-3xl px-10 lg:px-0 py-2 shadow-2xl">
+      <div class="flex flex-col lg:flex-row  lg:p-10  rounded-3xl px-10 lg:px-0 py-2 shadow-2xl shadow-gray-900">
         <div class="flex flex-col lg:divide-y-2 lg:divide-gray-500 gap-y-5 lg:mb-5 lg:w-1/2 lg:px-5">
           <div class="lg:p-4">
             <p class="text-[#B65F00] font-bold text-[15px] lg:text-2xl">RAZÓN SOCIAL</p>
@@ -601,10 +634,31 @@
         </div>
       </div>
 
+      <div class="mt-10 lg:mt-16">
+        <div id="galleryAutori" class="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 px-10 lg:px-0">
+
+        </div>
+        <div id="swiperAutori" class="swiper">
+          <!-- Additional required wrapper -->
+          <div id="Autori" class="swiper-wrapper">
+            <!-- Slides -->
+            <!-- <div class="swiper-slide">Slide 1</div> -->
+            <!-- <div class="swiper-slide">Slide 2</div> -->
+            <!-- <div class="swiper-slide">Slide 3</div> -->
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+        </div>
+
+
+      </div>
+
       <div class="mt-10 mb-16 lg:mt-16  flex flex-col lg:flex-row">
         <div class="w-full flex justify-center items-center lg:w-3/4">
           <div
-            class="shadow-2xl rounded-[35px] border-2 border-gray-400  w-[96%] lg:w-full  px-6 py-5 lg:justify-center ">
+            class="shadow-2xl shadow-gray-600 rounded-[35px] border-2 border-gray-400  w-[96%] lg:w-full  px-6 py-5 lg:justify-center ">
             <p class="text-[#B65F00] text-center font-bold text-[15px] lg:text-3xl"> VIAJES CON SENTIDO</p>
             <p class="text-center text-[#7C7B80] text-400 text-[13px] lg:text-2xl">Con tu viaje estas ayudando a la
               comunidad de
