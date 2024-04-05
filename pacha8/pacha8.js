@@ -8,6 +8,42 @@ import 'swiper/css/pagination';
 
 
 
+const itinerarioInfo = [
+  {
+    title: "Llegada a Lima",
+    desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú."
+  },
+  {
+    title: "Icas Paracas Full Day",
+    desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding."
+  },
+  {
+    title: "Vuelo a Cusco",
+    desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento y le llevara con dirección al Aeropuerto para el vuelo hacia la ciudad del Cusco. A la salida del Aeropuerto de Cusco un agente nuestro lo esperara con un cartel para trasladarlo a su alojamiento."
+  },
+  {
+    title: "Valle Conexión",
+    desc: "Iniciaremos esta excursion con una vista del Valle Sagrado en el Mirador de Taray. Luego nos dirigiremos a Pisac donde visitaremos el complejo arqueológico. Posteriormente tomaremos rumbo a Urubamba donde tendremos el almuerzo Buffet y terminaremos en Ollantaytambo"
+  },
+  {
+    title: "Machu Picchu",
+    desc: "Nuestro guía le esperara a la hora y en el lugar de encuentro para dirigirnos a la estación de buses y ser transportados hacia la Llaqta de Machu Picchu. En Machu Picchu el recorrido será con nuestro guía profesional y tendrá tiempo suficiente para tomarse las mejores fotos."
+  },
+  {
+    title: "Montaña de 7 Colores",
+    desc: "Esta excursión inicia a las 04:00 de la mañana dirigiéndonos al distrito de Cusipata donde tendremos nuestro desayuno, luego nos dirigiremos a la localidad de Chillihuani donde iniciara nuestra caminata hacia la Montaña de Colores. descansar y prepararse para iniciar su aventura por Perú."
+  },
+  {
+    title: "Tour Vivencial Andino",
+    desc: "Esta experiencia se realiza en Ccaccaccollo donde realizaremos actividades como observar el Proceso de la Fibra de Camélidos, la caminata al Circuito de Miradores, ser partícipes de una Danza Típica y Ceremonia Andina y participar del trabajo cotidiano de los pobladores."
+  },
+  {
+    title: "Vuelo a Lima",
+    desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento para trasladarlo al aeropuerto y tomar el vuelo a Lima. En el Aeropuerto de Lima realizara el Check In correspondiente para su vuelo internacional y continuar su viaje hacia su País de Origen"
+  }
+]
+console.log(itinerarioInfo)
+
 const gallery1 = ["https://res.cloudinary.com/denkdx0za/image/upload/v1711571559/asd_ibnvrr.jpg", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570492/F2_ojyc6h.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570493/F3_usy095.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570491/F5_btfshv.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570705/F6_jtoz5l.png"]
 
 
@@ -92,24 +128,45 @@ if (isMobileDevice()) {
   // tripa2.remove()
 
 
-  const itinerario = [
-    { title: "Llegada a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711645766/LLEGADA-LIMA_yyqeed.png", 
-      desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú." },
-    { title: "Icas Paracas Full Day", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711646387/HUACACHINS_cya0q5.png", 
-      desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding." },
-    { title: "Vuelo a Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711634680/V.CUSCO_ztzzwh.png", 
-      desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento y le llevara con dirección al Aeropuerto para el vuelo hacia la ciudad del Cusco. A la salida del Aeropuerto de Cusco un agente nuestro lo esperara con un cartel para trasladarlo a su alojamiento." },
-    { title: "Valle Conexión", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067854/VALLE_prgwdc.png", 
-      desc: "Iniciaremos esta excursion con una vista del Valle Sagrado en el Mirador de Taray. Luego nos dirigiremos a Pisac donde visitaremos el complejo arqueológico. Posteriormente tomaremos rumbo a Urubamba donde tendremos el almuerzo Buffet y terminaremos en Ollantaytambo" },
-    { title: "Machu Picchu", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067908/MACHU_mmv4xy.png", 
-      desc: "Nuestro guía le esperara a la hora y en el lugar de encuentro para dirigirnos a la estación de buses y ser transportados hacia la Llaqta de Machu Picchu. En Machu Picchu el recorrido será con nuestro guía profesional y tendrá tiempo suficiente para tomarse las mejores fotos." },
-    { title: "Montaña de 7 Colores", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067921/MONTA%C3%91A_p5qbjx.png", 
-      desc: "Esta excursión inicia a las 04:00 de la mañana dirigiéndonos al distrito de Cusipata donde tendremos nuestro desayuno, luego nos dirigiremos a la localidad de Chillihuani donde iniciara nuestra caminata hacia la Montaña de Colores. descansar y prepararse para iniciar su aventura por Perú." },
-    { title: "Tour Vivencial Andino", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067939/TOUR_VIVENCIAL_ANDINO_jjsc4m.png", 
-      desc: "Esta experiencia se realiza en Ccaccaccollo donde realizaremos actividades como observar el Proceso de la Fibra de Camélidos, la caminata al Circuito de Miradores, ser partícipes de una Danza Típica y Ceremonia Andina y participar del trabajo cotidiano de los pobladores." },
-    { title: "Vuelo a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067980/RETORNO-LIMA_mhfiq3.png", 
-      desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento para trasladarlo al aeropuerto y tomar el vuelo a Lima. En el Aeropuerto de Lima realizara el Check In correspondiente para su vuelo internacional y continuar su viaje hacia su País de Origen" },
+  const itinerarioGA = [
+    {
+      title: "Llegada a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711645766/LLEGADA-LIMA_yyqeed.png",
+      desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú."
+    },
+    {
+      title: "Icas Paracas Full Day", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711646387/HUACACHINS_cya0q5.png",
+      desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding."
+    },
+    {
+      title: "Vuelo a Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711634680/V.CUSCO_ztzzwh.png",
+      desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento y le llevara con dirección al Aeropuerto para el vuelo hacia la ciudad del Cusco. A la salida del Aeropuerto de Cusco un agente nuestro lo esperara con un cartel para trasladarlo a su alojamiento."
+    },
+    {
+      title: "Valle Conexión", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067854/VALLE_prgwdc.png",
+      desc: "Iniciaremos esta excursion con una vista del Valle Sagrado en el Mirador de Taray. Luego nos dirigiremos a Pisac donde visitaremos el complejo arqueológico. Posteriormente tomaremos rumbo a Urubamba donde tendremos el almuerzo Buffet y terminaremos en Ollantaytambo"
+    },
+    {
+      title: "Machu Picchu", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067908/MACHU_mmv4xy.png",
+      desc: "Nuestro guía le esperara a la hora y en el lugar de encuentro para dirigirnos a la estación de buses y ser transportados hacia la Llaqta de Machu Picchu. En Machu Picchu el recorrido será con nuestro guía profesional y tendrá tiempo suficiente para tomarse las mejores fotos."
+    },
+    {
+      title: "Montaña de 7 Colores", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067921/MONTA%C3%91A_p5qbjx.png",
+      desc: "Esta excursión inicia a las 04:00 de la mañana dirigiéndonos al distrito de Cusipata donde tendremos nuestro desayuno, luego nos dirigiremos a la localidad de Chillihuani donde iniciara nuestra caminata hacia la Montaña de Colores. descansar y prepararse para iniciar su aventura por Perú."
+    },
+    {
+      title: "Tour Vivencial Andino", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067939/TOUR_VIVENCIAL_ANDINO_jjsc4m.png",
+      desc: "Esta experiencia se realiza en Ccaccaccollo donde realizaremos actividades como observar el Proceso de la Fibra de Camélidos, la caminata al Circuito de Miradores, ser partícipes de una Danza Típica y Ceremonia Andina y participar del trabajo cotidiano de los pobladores."
+    },
+    {
+      title: "Vuelo a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067980/RETORNO-LIMA_mhfiq3.png",
+      desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento para trasladarlo al aeropuerto y tomar el vuelo a Lima. En el Aeropuerto de Lima realizara el Check In correspondiente para su vuelo internacional y continuar su viaje hacia su País de Origen"
+    },
   ]
+
+
+  const itinerario =  itinerarioInfo.map((ele,idx)=>({
+    ...ele,imgUrl:itinerarioGA[idx].imgUrl
+  }))
 
 
   const valueWithZero = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16']
@@ -463,7 +520,7 @@ if (isMobileDevice()) {
     MejoresDestinos.appendChild(temp)
   })
 
-  const itinerario = [
+  const itinerarioGA = [
     { title: "Llegada a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711645766/LLEGA_LIM_Mesa_de_trabajo_1_bttsbn.png", desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú." },
     { title: "Icas Paracas Full Day", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711646398/HUANCAC_Mesa_de_trabajo_1_r9m0dp.png", desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding." },
     { title: "Vuelo a Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712065865/vuelo_cusco_Mesa_de_trabajo_1_qy3im1.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
@@ -474,6 +531,9 @@ if (isMobileDevice()) {
     { title: "Vuelo a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066453/vuelo_a_lima_Mesa_de_trabajo_1_afiqz0.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
   ]
 
+const itinerario =  itinerarioInfo.map((ele,idx)=>({
+    ...ele,imgUrl:itinerarioGA[idx].imgUrl
+  }))
   const divItinerario = document.getElementById('itinerario')
   const ballNumbers = document.getElementById('ballNumbers')
   itinerario.forEach((ele, index) => {
@@ -529,7 +589,7 @@ if (isMobileDevice()) {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
     miniTemp.src = url
-    tempImg.loading = "lazy"
+    miniTemp.loading = "lazy"
     miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
     temp.appendChild(miniTemp)
@@ -548,7 +608,7 @@ if (isMobileDevice()) {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
     miniTemp.src = url
-    tempImg.loading = "lazy"
+    miniTemp.loading = "lazy"
     miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
     temp.appendChild(miniTemp)
@@ -562,7 +622,7 @@ if (isMobileDevice()) {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
     miniTemp.src = url
-    tempImg.loading = "lazy"
+    miniTemp.loading = "lazy"
     miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
     temp.appendChild(miniTemp)
@@ -575,7 +635,7 @@ if (isMobileDevice()) {
   galleryComida.forEach(url => {
     const temp = document.createElement('div')
     const miniTemp = document.createElement('img')
-    tempImg.loading = "lazy"
+    miniTemp.loading = "lazy"
     miniTemp.src = url
     miniTemp.className = "h-72 w-full max-w-full rounded-lg object-cover object-center"
     // temp. = `<img src="${url}" class="h-40 w-full max-w-full rounded-lg object-cover object-center" >`
@@ -638,7 +698,7 @@ const ansQues = [
     q: "A que altura se encuentra la montaña de 7 colores y laguna de humantay y cuál es la temperatura",
     a: "Laguna Humantay: La Laguna Humantay está ubicada a una altitud aproximada de 4,200 metros sobre el nivel del mar (13,780 pies). Temperatura: La temperatura en la Laguna Humantay puede variar, pero generalmente, debido a su elevada altitud, las temperaturas pueden ser heladas. Durante el día, las temperaturas pueden oscilar entre 10°C y 15°C (50°F a 59°F), mientras que por la noche pueden descender significativamente. Montaña Vinicunca (Montaña de Siete Colores): La Montaña Vinicunca, también conocida como la Montaña de Siete Colores o Rainbow Mountain, se encuentra a una altitud elevada, alrededor de 5,200 metros sobre el nivel del mar (17,060 pies). Temperatura: La temperatura en la Montaña de Siete Colores puede ser bastante fría debido a su altitud. Durante el día, las temperaturas pueden rondar los 5°C a 10°C (41°F a 50°F) y pueden descender por debajo de cero durante la noche. Es importante llevar ropa abrigada debido a las bajas temperaturas y la exposición al viento."
   },
-{
+  {
     q: "Qué tipo de ropa debo llevar para mis excursiones en Cusco , Lima , Ica , Puerto Mladonado?",
     a: "Cusco : Viste capas ligeras , cómodas y abrigadoras . Incluye una camiseta de manga larga o corta, pantalones ligeros y un sombrero para protegerte del sol. Para las temporadas de lluvias en Cusco lleva ropa muy abrigadora y casacas o un suéter inpermiables . Lima:Lima tiene un clima templado. Usa ropa ligera, como camisetas, pantalones cortos o faldas, y un sombrero para protegerte del sol. Lleva protector solar. Ica (Huacachina y Paracas): Debido al clima desértico, lleva ropa fresca y protector solar. Un sombrero y gafas de sol son esenciales. Y para las noches puede ser una chaqueta o suéter ligero. Puerto Maldonado (Amazonía): Usa ropa ligera y cómoda debido al clima cálido y húmedo. Un sombrero y repelente de insectos son esenciales. Un impermeable también puede ser útil, ya que la región puede experimentar lluvias."
   },
@@ -671,7 +731,7 @@ const ansQues = [
     q: "¿Debo tener mi vacuna contra la fiebre amarillas para hacer mis excursiones en Puerto Maldonado?",
     a: "La vacuna contra la fiebre amarilla es recomendada para aquellos que viajan a áreas donde existe el riesgo de contraer la enfermedad, y esto incluye algunas regiones de América del Sur, como la Amazonía, donde se encuentra Puerto Maldonado en Perú. Aunque la fiebre amarilla no es obligatoria para ingresar a Perú desde la mayoría de los países, la situación puede variar, y algunos países pueden requerir la vacuna como parte de sus regulaciones de salud pública Aunque la vacuna contra la fiebre amarilla puede no ser obligatoria para ingresar a Puerto Maldonado , se recomienda encarecidamente para aquellos que viajan a áreas de riesgo, como la Amazonía. La fiebre amarilla es transmitida por mosquitos y puede ser una enfermedad grave."
   },
-  
+
 ]
 
 const faq = document.querySelector(".faq-container")

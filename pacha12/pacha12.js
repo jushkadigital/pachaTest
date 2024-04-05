@@ -6,6 +6,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+
+
 const itinerarioInfo = [
   {
     title: "Llegada a Lima",
@@ -15,42 +17,48 @@ const itinerarioInfo = [
     title: "City Tour Lima",
     desc: "La primera excursión que realizaremos es el City Tour en Lima, esta excursión presenta sus tres periodos históricos de Lima: prehispánico, colonial y moderno. Esta excursión asi como las siguientes irá acompañado por un guía que estará siempre respondiendo sus preguntas."
   },
+
   {
-    title: "Ica Paracas Full Day",
-    desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y ﬁnalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding."
+    title: "Icas Paracas Full Day",
+    desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding."
   },
   {
     title: "Vuelo a Cusco",
     desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento y le llevara con dirección al Aeropuerto para el vuelo hacia la ciudad del Cusco. A la salida del Aeropuerto de Cusco un agente nuestro lo esperara con un cartel para trasladarlo a su alojamiento."
   },
   {
-    title: "Maras – Moray con Cuatrimotos",
-    desc: "Esta aventura inicia trasladándonos al poblado de Cruzpata donde tendremos una practica de manejo, luego continuaremos el recorrido hacia las terrazas experimentales de Moray y conoceremos las minas de sal de Maras."
-  },
-  {
     title: "Valle Conexión",
-    desc: "Iniciaremos esta excursion con una vista del Valle Sagrado en el Mirador de Taray. Luego nos dirigiremos a Pisac donde visitaremos el complejo arqueológico. Posteriormente tomaremos rumbo a Urubamba donde tendremos el almuerzo Buffet y terminaremos en Ollantaytambo."
+    desc: "Iniciaremos esta excursion con una vista del Valle Sagrado en el Mirador de Taray. Luego nos dirigiremos a Pisac donde visitaremos el complejo arqueológico. Posteriormente tomaremos rumbo a Urubamba donde tendremos el almuerzo Buffet y terminaremos en Ollantaytambo"
   },
   {
     title: "Machu Picchu",
-    desc: "Nuestro guía le esperara a la hora y en el lugar de encuentro para dirigirnos a la estación de buses y ser transportados hacia la Llaqta de Machu Picchu. En Machu Picchu el recorrido será con nuestro guía profesional y tendrá tiempo suﬁciente para tomarse las mejores fotos."
+    desc: "Nuestro guía le esperara a la hora y en el lugar de encuentro para dirigirnos a la estación de buses y ser transportados hacia la Llaqta de Machu Picchu. En Machu Picchu el recorrido será con nuestro guía profesional y tendrá tiempo suficiente para tomarse las mejores fotos."
   },
   {
-    title: "Montaña de Colores",
-    desc: "Esta excursión inicia a las 04:00 de la mañana dirigiéndonos al distrito de Cusipata donde tendremos nuestro desayuno, luego nos dirigiremos a la localidad de Chillihuani donde iniciara nuestra caminata hacia la Montaña de Colores."
+    title: "Montaña de 7 Colores",
+    desc: "Esta excursión inicia a las 04:00 de la mañana dirigiéndonos al distrito de Cusipata donde tendremos nuestro desayuno, luego nos dirigiremos a la localidad de Chillihuani donde iniciara nuestra caminata hacia la Montaña de Colores. descansar y prepararse para iniciar su aventura por Perú."
   },
   {
     title: "Tour Vivencial Andino",
-    desc: "Esta experiencia se realiza en Ccaccaccollo donde realizaremos actividades como observar el Proceso de la Fibra de Camélidos, la caminata al Circuito de Miradores, ser participes de una Danza Típica y Ceremonia Andina y participar del trabajo cotidiano de los pobladores."
+    desc: "Esta experiencia se realiza en Ccaccaccollo donde realizaremos actividades como observar el Proceso de la Fibra de Camélidos, la caminata al Circuito de Miradores, ser partícipes de una Danza Típica y Ceremonia Andina y participar del trabajo cotidiano de los pobladores."
+  },
+  {
+    title: "Tambopata",
+    desc: "Iniciamos con el recojo en el terminal terrestre para luego trasladarnos en una embarcación hasta nuestro albergue. Después de almorzar visitaremos la “Isla de los Monos” localizada frente al Lodge cruzando el Río Madre de Dios."
+  },
+{
+    title: "Lago Saldoval",
+    desc: "Luego del desayuno nos dirigimos hacia el Lago Sandoval, uno de los más grandes de la Reserva Nacional de Tambopata, donde apreciaremos gran variedad de aves y monos de diferentes especies. Retornamos al Lodge para disfrutar de un almuerzo típico."
+  },
+{
+    title: "Canopy – Vuelo a Lima",
+    desc: "Esta excursión inicia con una pequeña caminata por el Canopy Walk-Way que nos permitirá apreciar la naturaleza y tendremos una vista panorámica del Río Madre de Dios. Retornaremos al Lodge para disfrutar del desayuno y posteriormente tomar el vuelo a Lima."
   },
 {
     title: "Retorno",
-    desc: "Esta excursión inicia a las 04:00 de la mañana dirigiéndonos al distrito de Cusipata donde tendremos nuestro desayuno, luego nos dirigiremos a la localidad de Chillihuani donde iniciara nuestra caminata hacia la Montaña de Colores."
-  }
+    desc: "De acuerdo al horario de vuelo nuestra movilidad pasara por su alojamiento para trasladarlo al aeropuerto y tomar el vuelo a su País de Origen. En el Aeropuerto de Lima realizara el Check In correspondiente para su vuelo internacional."
+  },
 ]
-
-
-
 console.log(itinerarioInfo)
 
 const gallery1 = ["https://res.cloudinary.com/denkdx0za/image/upload/v1711571559/asd_ibnvrr.jpg", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570492/F2_ojyc6h.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570493/F3_usy095.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570491/F5_btfshv.png", "https://res.cloudinary.com/denkdx0za/image/upload/c_crop,ar_1:1/v1711570705/F6_jtoz5l.png"]
@@ -136,20 +144,22 @@ if (isMobileDevice()) {
   // const tripa2 = document.getElementById('tripa')
   // tripa2.remove()
 
-
-
-  const itinerarioGA = [
+const itinerarioGA = [
     { title: "Llegada a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711645766/LLEGADA-LIMA_yyqeed.png", desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú." },
-    { title: "CityTour", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712329297/cityTourMobileIti_khuehs.png", desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding." },
-    { title: "Icas paracas", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711646387/HUACACHINS_cya0q5.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "vuelo Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712329158/cuscoMobilIti_vxcsuc.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Maras – Moray con Cuatrimoto", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712329158/marasMobilTiti_z7hzb7.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "citypTour ", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712329297/cityTourMobileIti_khuehs.png", desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú." },
+    { title: "Icas Paracas Full Day", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1711646387/HUACACHINS_cya0q5.png", desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding." },
+    { title: "Vuelo a Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712329158/cuscoMobilIti_vxcsuc.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
     { title: "Valle Conexión", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712329480/VALLE_rtmor2.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "machu ueou", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067908/MACHU_mmv4xy.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Montaña de Colores", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067921/MONTA%C3%91A_p5qbjx.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Tour Vivencial An", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067939/TOUR_VIVENCIAL_ANDINO_jjsc4m.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Retorno", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067980/RETORNO-LIMA_mhfiq3.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "Machu Picchu", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067908/MACHU_mmv4xy.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "Montaña de 7 Colores", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067921/MONTA%C3%91A_p5qbjx.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "Tour Vivencial Andino", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067939/TOUR_VIVENCIAL_ANDINO_jjsc4m.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "tambopata", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712331157/tambopata_lupeqf.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "lago Sandoval", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712331156/snadovalLago_ze8xjq.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "canopy", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712330414/CANOPY_Mesa-de-trabajo-1_y8uikg.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "retorono", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/c_fill,w_360,h_203,ar_16:9/v1712067980/RETORNO-LIMA_mhfiq3.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
   ]
+
+
 
   const itinerario =  itinerarioInfo.map((ele,idx)=>({
     ...ele,imgUrl:itinerarioGA[idx].imgUrl
@@ -510,14 +520,16 @@ if (isMobileDevice()) {
   const itinerarioGA = [
     { title: "Llegada a Lima", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711645766/LLEGA_LIM_Mesa_de_trabajo_1_bttsbn.png", desc: "De acuerdo al horario de su vuelo estaremos pendiente a su llegada. En el aeropuerto de Lima nuestro agente lo esperará con un cartel con su nombre; este lo llevará con dirección a su alojamiento donde podrá descansar y prepararse para iniciar su aventura por Perú." },
     { title: "CityTour", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712328138/CTIY-LIMA_Mesa-de-trabajo-1_j9kxfz.png", desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding." },
-    { title: "Icas paracas", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711646398/HUANCAC_Mesa_de_trabajo_1_r9m0dp.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "vuelo Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712065865/vuelo_cusco_Mesa_de_trabajo_1_qy3im1.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Maras – Moray con Cuatrimoto", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712328138/cu_Mesa-de-trabajo-1-1_tqossg.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "Icas Paracas Full Day", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1711646398/HUANCAC_Mesa_de_trabajo_1_r9m0dp.png", desc: "Esta excursión iniciará con un viaje al Balneario de Paracas. Continuaremos nuestro viaje hacia Ica donde visitaremos la Bodega Nietto y finalmente nos dirigiremos a la Laguna de la Huacachina donde podremos realizar actividades como Sandboarding." },
+    { title: "Vuelo a Cusco", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712065865/vuelo_cusco_Mesa_de_trabajo_1_qy3im1.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
     { title: "Valle Conexión", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066099/valle_conexi%C3%B3n_Mesa_de_trabajo_1_myqvpe.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "machu ueou", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066103/machu_picchu_Mesa_de_trabajo_1_a7blvp.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Montaña de Colores", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066108/monta%C3%B1a_7_colores_Mesa_de_trabajo_1_yjo3yj.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Tour Vivencial An", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066333/tour_ccaccacollo_Mesa_de_trabajo_1_oqt9be.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
-    { title: "Retorno", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066453/vuelo_a_lima_Mesa_de_trabajo_1_afiqz0.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "Machu Picchu", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066103/machu_picchu_Mesa_de_trabajo_1_a7blvp.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "Montaña de 7 Colores", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066108/monta%C3%B1a_7_colores_Mesa_de_trabajo_1_yjo3yj.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "Tour Vivencial Andino", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066333/tour_ccaccacollo_Mesa_de_trabajo_1_oqt9be.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "tambopata", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712330412/TAMBOPATA_Mesa-de-trabajo-1_ablvhf.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "lago Sandoval", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712330412/LAGO-SANDOBAL_Mesa-de-trabajo-1_gulqs9.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "canopy", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712330414/CANOPY_Mesa-de-trabajo-1_y8uikg.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
+    { title: "retorono", imgUrl: "https://res.cloudinary.com/denkdx0za/image/upload/v1712066453/vuelo_a_lima_Mesa_de_trabajo_1_afiqz0.png", desc: "De acuerdo al horario de vuelonuestra movilidad pasara por sualojamiento y le llevara con direcciónal Aeropuerto para el vuelo hacia laciudad del Cusco. A la salida delAeropuerto de Cusco un agentenuestro lo esperara con un cartelpara trasladarlo a su alojamiento." },
   ]
 
 const itinerario =  itinerarioInfo.map((ele,idx)=>({
