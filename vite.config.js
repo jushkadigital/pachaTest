@@ -14,7 +14,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         pacha8: resolve(__dirname, 'pacha8/index.html'),
         pacha10: resolve(__dirname, 'pacha10/index.html'),
-
+        pacha12: resolve(__dirname, 'pacha12/index.html'),
       },
     }
   },
