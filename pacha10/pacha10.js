@@ -752,4 +752,27 @@ toggles.forEach((toggle) => {
     toggle.parentNode.classList.toggle("active");
   });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyFrames = [].slice.call(document.querySelectorAll(".lazy-iframe"));
 
+  if ("IntersectionObserver" in window) {
+    var lazyFrameObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var lazyFrame = entry.target;
+          lazyFrame.src = lazyFrame.dataset.src;
+          lazyFrameObserver.unobserve(lazyFrame);
+        }
+      });
+    });
+
+    lazyFrames.forEach(function(lazyFrame) {
+      lazyFrameObserver.observe(lazyFrame);
+    });
+  } else {
+    // Fallback for browsers that don't support IntersectionObserver
+    lazyFrames.forEach(function(lazyFrame) {
+      lazyFrame.src = lazyFrame.dataset.src;
+    });
+  }
+});
